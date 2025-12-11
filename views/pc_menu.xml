@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menú raíz -->
+    <menuitem id="menu_pc_management_root"
+              name="PC Management"
+              sequence="10"/>
+
+    <!-- Menú de configuración / gestión -->
+    <menuitem id="menu_pc_management_main"
+              name="Gestión PCs"
+              parent="menu_pc_management_root"
+              sequence="10"/>
+
+    <!-- Submenús -->
+    <menuitem id="menu_pc_components"
+              name="Componentes"
+              parent="menu_pc_management_main"
+              action="action_pc_component"
+              sequence="10"/>
+
+    <menuitem id="menu_pc_computers"
+              name="Ordenadores"
+              parent="menu_pc_management_main"
+              action="action_pc_computer"
+              sequence="20"/>
+
+</odoo>
